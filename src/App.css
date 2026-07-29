@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 24, 66);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.browser-window {
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.pad{
+  margin: 40px 0px 30px 0px ;
+  font-size: 25px;
+}
+
+.getstarted{
+  border-radius: 20px; 
+  padding: 10px; 
+  font-size: 20px;
+  color: rgb(115, 98, 138);
+  background-color: rgb(49, 61, 90);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: rgb(160, 154, 190);
+    border-radius: 20px 20px 0 0;
+    padding: 8px 8px 0 8px;
+    gap: 4px;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 12px 12px 0 0;
+    background-color: rgb(160, 154, 190);
+    color: rgb(230, 228, 240);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tab-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.tab-item.active {
+    background-color: rgb(213, 209, 234);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.tab-content {
+    background-color: rgb(213, 209, 234);
+    border-radius: 0 0 20px 20px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: rgb(187, 178, 234);
+    border-radius: 20px;
+    height: auto;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 25%;
+    margin: 15px;
+}
+
+.item_content {
+    position: relative;
+    margin: 0px;
+    color: black;
+}
+
+.loader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+  margin-top: 15%;
+  left: 50%;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset rgb(115, 98, 138);
+  animation: l4 2.5s infinite;
+}
+.loader:after {
+  animation-delay: -1.25s;
+}
+@keyframes l4 {
+  0% {
+    inset: 0 35px 35px 0;
+  }
+  12.5% {
+    inset: 0 35px 0 0;
+  }
+  25% {
+    inset: 35px 35px 0 0;
+  }
+  37.5% {
+    inset: 35px 0 0 0;
+  }
+  50% {
+    inset: 35px 0 0 35px;
+  }
+  62.5% {
+    inset: 0 0 0 35px;
+  }
+  75% {
+    inset: 0 0 35px 35px;
+  }
+  87.5% {
+    inset: 0 0 35px 0;
+  }
+  100% {
+    inset: 0 35px 35px 0;
+  }
+}

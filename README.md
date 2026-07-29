@@ -5,11 +5,11 @@ The user chooses a meeting recording and the project filters and creates tasks t
 Clicking on one these tasks takes the user to a new application with the summary of the task already written (with permission).
 This project was to explore and master my expertise in:
 
-React
-FastAPI
-Google APIs
-Ollama LLMs
-HTML + CSS
+React,
+FastAPI,
+Google APIs,
+Ollama LLMs,
+HTML + CSS,
 PostgreSQL
 
 The Ollama model I used was gemma4:e4b for its speed and accuracy despite its fewer parameters.
